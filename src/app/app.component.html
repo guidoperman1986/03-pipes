@@ -110,6 +110,18 @@
         <td> capitalizado </td>
         <td>{{ nombre2 | capitalizado:false }}</td>
       </tr>
+      <tr>
+        <td>{{nombre}}</td>
+        <td>
+          contraseña:{{activar}}
+          <br>
+            <button class="btn btn-primary"
+              (click)="activar = !activar"
+              type="button" name="button">Activar/Descativar
+            </button>
+         </td>
+        <td>{{ nombre | contrasena:activar }}</td>
+      </tr>
     </tbody>
   </table>
 
@@ -122,5 +134,7 @@
   <pre>
     {{heroe | json}}
   </pre>
+
+
 
 </div>

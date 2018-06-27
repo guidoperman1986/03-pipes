@@ -33,4 +33,7 @@ export class AppComponent {
   })
 
   fecha = new Date();
+
+  activar:boolean=true;
+  
 }
